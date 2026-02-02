@@ -1,6 +1,6 @@
 from utils import * 
 from config import Config
-from llm_json import LLMExtractor
+from hwp_llm_mapper import HwpLLMFieldMapper
 
 
 
@@ -44,7 +44,7 @@ company_info = {
     )
 }
 
-llm = LLMExtractor()
+llm = HwpLLMFieldMapper()
 result = llm.extract_info(table_dict, company_info)
 
 fill_map = result.get("fill_map", {})

@@ -1,7 +1,7 @@
 from openai import OpenAI
 import json
 
-class LLMExtractor:
+class HwpLLMFieldMapper:
     """
     텍스트 마이닝으로 도출된 키워드와 원문을 기반으로
     조사 목적, 대상, 도메인, 주요 변수 등을 구조화된 JSON으로 추출하는 모듈
